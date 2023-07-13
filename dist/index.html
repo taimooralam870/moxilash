@@ -65,6 +65,14 @@
         .brandon {
             font-family: Brandon !important;
         }
+
+        .new_beauty_tag {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            display: block;
+            width: 100%;
+        }
     </style>
 </head>
 
@@ -74,7 +82,7 @@
             <div class="bg-[#FED8BF] text-center py-3 lg:py-2">
                 <div class="">Free Shipping when you spend $75+</div>
             </div>
-            <div class="navbar portrait:hidden px-4 py-3 flex flex-row  justify-between items-center">
+            <div class="navbar hidden lg:block px-4 py-3 flex flex-row  justify-between items-center">
                 <div class="">
                     <ul class="flex flex-row justify-between gap-7 font-[14px] font-[futura-pt-bold]">
                         <li class="cursor-pointer hover:underline">
@@ -410,10 +418,18 @@
                                         37% </span>
                                 </div>
                             </div>
-                            <a class="" href="#">
-                                <img class="object-cover w-full max-w-[280px] max-h-[230px] md:max-w-[320px] md:max-h-[248px]"
+                            <a class="relative" href="#">
+                                <img class="object-cover w-full  max-w-[280px] max-h-[230px] md:max-w-[320px] md:max-h-[248px]"
                                     src="//www.moxielash.com/cdn/shop/products/love-kit-kit-sk2-rt-1-388170_large.jpg?v=1686936836">
+
+                        
+                                    <img class="absolute w-[40%] right-[8px] bottom-[5px] lg:right-[8px] lg:-bottom-[9px] lg:w-[29%]"
+                                        src="https://cdn.shopify.com/s/files/1/2569/3918/files/NB_AwardSeal2022_200x.png?v=1650191524">
+                        
                             </a>
+
+
+
                             <div class="">
                                 <div class="flex items-center justify-center pb-1">
                                     <img class="w-[14px] pb-1"
@@ -697,88 +713,116 @@
                     </div>
                 </section>
                 <footer class="bg-black text-white">
-                    <div class="container mx-auto py-8 px-4">
-                        <h1 class="text-2xl font-bold mb-4">VIP SIGNUP</h1>
-                        <h3 class="text-lg mb-4">Be the first to know about exclusive deals, launches &amp; more!</h3>
-                        <div class="flex flex-row sm:flex-col mb-4">
-                            <input type="text" placeholder="First Name"
-                                class="w-full sm:w-auto mb-2 sm:mr-2 py-2 px-4 border border-gray-300 rounded">
-                            <input type="text" placeholder="Email Address"
-                                class="w-full sm:w-auto mb-2 sm:mr-2 py-2 pl-4 border border-gray-300 rounded">
-                            <div class="relative cursor-pointer w-full mb-4">
-                                <span class="absolute inset-y-0 left-0 px-3 flex items-center">
-                                    <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.4/flags/4x3/us.svg"
-                                        alt="US Flag" class="object-cover h-6 w-[40px]">
-                                </span>
-                                <input type="tel" placeholder="Enter your mobile number"
-                                    class="pl-14  pr-10 py-2 w-full border border-gray-300 rounded">
+                    <div class=" lg:max-w-2xl">
+                        <div class="container mx-auto py-8 px-4">
+                            <h1 class="text-2xl font-bold mb-4 text-center">VIP SIGNUP</h1>
+                            <h3 class="lg:text-lg mb-4 text-center brandon text-[#e2a998]">Be the first to know about
+                                exclusive deals,
+                                launches &amp;
+                                more!</h3>
+                            <div class="flex flex-col lg:gap-2 mb-4 text-black">
+
+                                <div class="flex flex-col lg:flex-row lg:gap-4">
+
+                                    <div class="w-full">
+                                        <input type="text" placeholder="First Name"
+                                            class="mb-2 sm:mr-2 py-2 px-4 border border-gray-300 rounded w-full">
+                                    </div>
+
+                                    <div class="w-full">
+                                        <input type="text" placeholder="Email Address"
+                                            class="mb-2 sm:mr-2 py-2 pl-4 border border-gray-300 rounded w-full">
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col lg:flex-row lg:gap-4">
+                                    <div class="relative cursor-pointer w-full mb-4">
+                                        <span class="absolute inset-y-0 left-0 px-3 flex items-center">
+                                            <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.4/flags/4x3/us.svg"
+                                                alt="US Flag" class="object-cover h-6 w-[40px]">
+                                        </span>
+                                        <input type="tel" placeholder="Enter your mobile number"
+                                            class="pl-14  pr-10 py-2 w-full border border-gray-300 rounded">
+                                    </div>
+
+                                    <div class="w-full">
+                                        <button class="bg-gray-800 text-white py-2 lg:py-2.5 px-4 rounded w-full">SIGN
+                                            UP</button>
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+                            <p class="text-sm mt-4">By submitting this form, you agree to receive recurring automated
+                                promotional and personalized marketing text messages from MoxieLash. Consent is not a
+                                condition of any purchase. Reply HELP for help and STOP to cancel. Msg frequency varies.
+                                Msg
+                                and data rates may apply. View <a href="#" target="_blank"
+                                    class="text-white font-normal underline">Terms &amp; Privacy</a></p>
+                            <div class="flex justify-center mt-4">
+                                <a href="http://www.instagram.com/moxielash" target="_blank" rel="noopener"
+                                    class="mr-4">
+                                    <svg aria-hidden="true" focusable="false" role="presentation"
+                                        class="h-6 w-6 text-white" viewBox="0 0 448 512">
+                                        <path fill="currentColor"
+                                            d="M224 0C100.29 0 0 100.29 0 224c0 123.71 100.29 224 224 224s224-100.29 224-224C448 100.29 347.71 0 224 0zm135.46 320c-.65 3.63-3.07 6.53-6.52 7.66-25.94 7.38-51.43 7.19-77.17 0-4.37-1.13-5.92-4.07-6.53-8.15-1.65-11.33-2.65-22.68-2.65-34.36 0-36.02 1.83-54.07-9.17-14.8-8.19-30.09-22.57-38.29-37.91C166.16 243.95 161.35 224 168 224c8.67 0 18.47 8.46 23.53 13.38 14.75 12.91 16.97 35.44 16.97 54.24 0 11.49 2.3 18.17 3.83 26.32 1.36 7.03-.1 9.22-6.83 14.04-7.3 5.12-16.38 7.18-25.65 7.18-23.43 0-42.41-18.98-42.41-42.41 0-23.43 18.98-42.41 42.41-42.41 23.43 0 42.41 18.98 42.41 42.41 0 7.14-1.7 15.46-7.3 22.68-7.57 10.63-24.33 16.47-34.45 10.92-9.59-5.11-11.21-18.18-11.21-27.61 0-16.63.35-33.32.35-49.95 0-1.9.28-3.8.71-5.67-7.14-.38-14.38-.56-21.53-.56-123.71 0-224 100.29-224 224s100.29 224 224 224 224-100.29 224-224c0-2.79-.05-5.58-.17-8.37 3.92-2.56 7.3-5.83 9.91-9.56 4.19-5.73 7.64-13.73 7.11-22.08z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a href="https://www.facebook.com/MOXIELASHCOM/" target="_blank" rel="noopener"
+                                    class="mr-4">
+                                    <svg aria-hidden="true" focusable="false" role="presentation"
+                                        class="h-6 w-6 text-white" viewBox="0 0 320 512">
+                                        <path fill="currentColor"
+                                            d="M320 32.09V480c0 17.67-14.33 32-32 32H32c-17.67 0-32-14.33-32-32V32.09C0 14.43 14.33 0 32 0h256c17.67 0 32 14.43 32 32.09zM96 64h-64v64h64V64zm0 96h-64v64h64v-64zm0 96h-64v64h64v-64zm0 96h-64v64h64v-64zm160-224h-64v64h64v-64zm0 96h-64v64h64v-64zm0 96h-64v64h64v-64z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a href="https://www.youtube.com/moxielash" target="_blank" rel="noopener" class="mr-4">
+                                    <svg aria-hidden="true" focusable="false" role="presentation"
+                                        class="h-6 w-6 text-white" viewBox="0 0 576 512">
+                                        <path fill="currentColor"
+                                            d="M567.9 141.3c-6.4-24-24.7-42.2-48.7-48.7C456.6 85 288 85 288 85S119.4 85 57.8 92.6C33.8 99.1 15.5 117.3 9.1 141.3 1.7 168.3 0 208 0 208s1.7 39.7 9.1 66.7c6.4 24 24.7 42.2 48.7 48.7C119.4 427 288 427 288 427s168.6 0 230.2-7.6c24-6.4 42.3-24.7 48.7-48.7C574.3 247.7 576 208 576 208s-1.7-39.7-9.1-66.7zM230.4 338.6V173.3l150.6 82.7-150.6 82.6z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a href="https://twitter.com/moxielash" target="_blank" rel="noopener" class="mr-4">
+                                    <svg aria-hidden="true" focusable="false" role="presentation"
+                                        class="h-6 w-6 text-white" viewBox="0 0 512 512">
+                                        <path fill="currentColor"
+                                            d="M492.5 109.9c-17.8 7.9-36.9 13.3-57 15.8 20.5-12.3 36.3-31.8 43.7-55.1-19.2 11.4-40.6 19.6-63.3 24.1C396.7 75 372.4 64 345 64c-45.4 0-82.1 36.7-82.1 82.1 0 6.4.7 12.7 2.1 18.8-68.3-3.4-128.9-36.1-169.6-85.9-7.1 12.3-11.2 26.5-11.2 41.8 0 28.8 14.7 54.2 37 69.1-13.6-.4-26.4-4.2-37.6-10.4v1.1c0 40.2 28.6 73.7 66.7 81.2-7 1.9-14.4 2.9-22 2.9-5.4 0-10.6-.5-15.7-1.5 10.6 33.2 41.3 57.4 77.6 58.2-28.4 22.3-64.3 35.6-103.4 35.6-6.7 0-13.3-.4-19.8-1.5 36.8 23.6 80.7 37.4 127.7 37.4 153.2 0 237.5-127 237.5-237.5v-10.8c16.3-11.7 30.4-26.3 41.6-43z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a href="https://www.pinterest.com/moxiebabes/" target="_blank" rel="noopener"
+                                    class="mr-4">
+                                    <svg aria-hidden="true" focusable="false" role="presentation"
+                                        class="h-6 w-6 text-white" viewBox="0 0 384 512">
+                                        <path fill="currentColor"
+                                            d="M192 0C86 0 0 86 0 192c0 77.5 46 144 112.5 172.5-1.5-12.5-2.5-31.5 0-44.5l8.5-36.5c9.6 38 6.5 66-2 96.5-5.8 23.6 12.3 43.3 35.8 43.3 42.5 0 63-53.5 63-106 0-31.8-20.5-58.8-48.8-58.8-36.4 0-60.6 40.2-60.6 80.2 0 29.3 9.6 48.7 9.6 48.7l-36.4 152.7c-8.4 35.2-1 78.3-1 78.3 1 6.2 8 8 11 3.3l34.8-41.6c5.7-6.8 20-26.8 27-37.6 1.7-2.9 1-6.9-1.8-8.8-9.6-6.2-26.3-18.8-26.3-53.8 0-64.2 47-116.8 133-116.8 70.5 0 120 51.5 120 120 0 73.5-45 130.5-109.5 130.5-21.5 0-41.7-11-48.4-23.3 0 0-11 43.7-13 52.7-4 13.7-11.7 27.8-18.5 38.5 16.3 4.7 33.7 7.3 51.7 7.3 106 0 192-86 192-192S298 0 192 0">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a href="https://www.tiktok.com/@moxie" target="_blank" rel="noopener" class="mr-4">
+                                    <svg aria-hidden="true" focusable="false" role="presentation"
+                                        class="h-6 w-6 text-white" viewBox="0 0 576 512">
+                                        <path fill="currentColor"
+                                            d="M285.6 9.6C150.8 9.6 38.4 112 38.4 248v16c0 135.2 112.4 238.4 247.2 238.4h16C420.4 502.4 532.8 399.2 532.8 264V248C532.8 112 420.4 9.6 285.6 9.6zm83.2 232a92 92 0 1 1-92-92 92 92 0 0 1 92 92zm22.4-92.8c0-41-35.2-76.8-76.8-76.8s-76.8 35.2-76.8 76.8v22.4c0 41 35.2 76.8 76.8 76.8s76.8-35.2 76.8-76.8v-22.4z">
+                                        </path>
+                                    </svg>
+                                </a>
                             </div>
                         </div>
-                        <button class="bg-gray-800 text-white py-2 px-4 rounded">SIGN UP</button>
-                        <p class="text-sm mt-4">By submitting this form, you agree to receive recurring automated
-                            promotional and personalized marketing text messages from MoxieLash. Consent is not a
-                            condition of any purchase. Reply HELP for help and STOP to cancel. Msg frequency varies. Msg
-                            and data rates may apply. View <a href="#" target="_blank"
-                                class="text-white font-normal underline">Terms &amp; Privacy</a></p>
-                        <div class="flex justify-center mt-4">
-                            <a href="http://www.instagram.com/moxielash" target="_blank" rel="noopener" class="mr-4">
-                                <svg aria-hidden="true" focusable="false" role="presentation" class="h-6 w-6 text-white"
-                                    viewBox="0 0 448 512">
-                                    <path fill="currentColor"
-                                        d="M224 0C100.29 0 0 100.29 0 224c0 123.71 100.29 224 224 224s224-100.29 224-224C448 100.29 347.71 0 224 0zm135.46 320c-.65 3.63-3.07 6.53-6.52 7.66-25.94 7.38-51.43 7.19-77.17 0-4.37-1.13-5.92-4.07-6.53-8.15-1.65-11.33-2.65-22.68-2.65-34.36 0-36.02 1.83-54.07-9.17-14.8-8.19-30.09-22.57-38.29-37.91C166.16 243.95 161.35 224 168 224c8.67 0 18.47 8.46 23.53 13.38 14.75 12.91 16.97 35.44 16.97 54.24 0 11.49 2.3 18.17 3.83 26.32 1.36 7.03-.1 9.22-6.83 14.04-7.3 5.12-16.38 7.18-25.65 7.18-23.43 0-42.41-18.98-42.41-42.41 0-23.43 18.98-42.41 42.41-42.41 23.43 0 42.41 18.98 42.41 42.41 0 7.14-1.7 15.46-7.3 22.68-7.57 10.63-24.33 16.47-34.45 10.92-9.59-5.11-11.21-18.18-11.21-27.61 0-16.63.35-33.32.35-49.95 0-1.9.28-3.8.71-5.67-7.14-.38-14.38-.56-21.53-.56-123.71 0-224 100.29-224 224s100.29 224 224 224 224-100.29 224-224c0-2.79-.05-5.58-.17-8.37 3.92-2.56 7.3-5.83 9.91-9.56 4.19-5.73 7.64-13.73 7.11-22.08z">
-                                    </path>
-                                </svg>
-                            </a>
-                            <a href="https://www.facebook.com/MOXIELASHCOM/" target="_blank" rel="noopener"
-                                class="mr-4">
-                                <svg aria-hidden="true" focusable="false" role="presentation" class="h-6 w-6 text-white"
-                                    viewBox="0 0 320 512">
-                                    <path fill="currentColor"
-                                        d="M320 32.09V480c0 17.67-14.33 32-32 32H32c-17.67 0-32-14.33-32-32V32.09C0 14.43 14.33 0 32 0h256c17.67 0 32 14.43 32 32.09zM96 64h-64v64h64V64zm0 96h-64v64h64v-64zm0 96h-64v64h64v-64zm0 96h-64v64h64v-64zm160-224h-64v64h64v-64zm0 96h-64v64h64v-64zm0 96h-64v64h64v-64z">
-                                    </path>
-                                </svg>
-                            </a>
-                            <a href="https://www.youtube.com/moxielash" target="_blank" rel="noopener" class="mr-4">
-                                <svg aria-hidden="true" focusable="false" role="presentation" class="h-6 w-6 text-white"
-                                    viewBox="0 0 576 512">
-                                    <path fill="currentColor"
-                                        d="M567.9 141.3c-6.4-24-24.7-42.2-48.7-48.7C456.6 85 288 85 288 85S119.4 85 57.8 92.6C33.8 99.1 15.5 117.3 9.1 141.3 1.7 168.3 0 208 0 208s1.7 39.7 9.1 66.7c6.4 24 24.7 42.2 48.7 48.7C119.4 427 288 427 288 427s168.6 0 230.2-7.6c24-6.4 42.3-24.7 48.7-48.7C574.3 247.7 576 208 576 208s-1.7-39.7-9.1-66.7zM230.4 338.6V173.3l150.6 82.7-150.6 82.6z">
-                                    </path>
-                                </svg>
-                            </a>
-                            <a href="https://twitter.com/moxielash" target="_blank" rel="noopener" class="mr-4">
-                                <svg aria-hidden="true" focusable="false" role="presentation" class="h-6 w-6 text-white"
-                                    viewBox="0 0 512 512">
-                                    <path fill="currentColor"
-                                        d="M492.5 109.9c-17.8 7.9-36.9 13.3-57 15.8 20.5-12.3 36.3-31.8 43.7-55.1-19.2 11.4-40.6 19.6-63.3 24.1C396.7 75 372.4 64 345 64c-45.4 0-82.1 36.7-82.1 82.1 0 6.4.7 12.7 2.1 18.8-68.3-3.4-128.9-36.1-169.6-85.9-7.1 12.3-11.2 26.5-11.2 41.8 0 28.8 14.7 54.2 37 69.1-13.6-.4-26.4-4.2-37.6-10.4v1.1c0 40.2 28.6 73.7 66.7 81.2-7 1.9-14.4 2.9-22 2.9-5.4 0-10.6-.5-15.7-1.5 10.6 33.2 41.3 57.4 77.6 58.2-28.4 22.3-64.3 35.6-103.4 35.6-6.7 0-13.3-.4-19.8-1.5 36.8 23.6 80.7 37.4 127.7 37.4 153.2 0 237.5-127 237.5-237.5v-10.8c16.3-11.7 30.4-26.3 41.6-43z">
-                                    </path>
-                                </svg>
-                            </a>
-                            <a href="https://www.pinterest.com/moxiebabes/" target="_blank" rel="noopener" class="mr-4">
-                                <svg aria-hidden="true" focusable="false" role="presentation" class="h-6 w-6 text-white"
-                                    viewBox="0 0 384 512">
-                                    <path fill="currentColor"
-                                        d="M192 0C86 0 0 86 0 192c0 77.5 46 144 112.5 172.5-1.5-12.5-2.5-31.5 0-44.5l8.5-36.5c9.6 38 6.5 66-2 96.5-5.8 23.6 12.3 43.3 35.8 43.3 42.5 0 63-53.5 63-106 0-31.8-20.5-58.8-48.8-58.8-36.4 0-60.6 40.2-60.6 80.2 0 29.3 9.6 48.7 9.6 48.7l-36.4 152.7c-8.4 35.2-1 78.3-1 78.3 1 6.2 8 8 11 3.3l34.8-41.6c5.7-6.8 20-26.8 27-37.6 1.7-2.9 1-6.9-1.8-8.8-9.6-6.2-26.3-18.8-26.3-53.8 0-64.2 47-116.8 133-116.8 70.5 0 120 51.5 120 120 0 73.5-45 130.5-109.5 130.5-21.5 0-41.7-11-48.4-23.3 0 0-11 43.7-13 52.7-4 13.7-11.7 27.8-18.5 38.5 16.3 4.7 33.7 7.3 51.7 7.3 106 0 192-86 192-192S298 0 192 0">
-                                    </path>
-                                </svg>
-                            </a>
-                            <a href="https://www.tiktok.com/@moxie" target="_blank" rel="noopener" class="mr-4">
-                                <svg aria-hidden="true" focusable="false" role="presentation" class="h-6 w-6 text-white"
-                                    viewBox="0 0 576 512">
-                                    <path fill="currentColor"
-                                        d="M285.6 9.6C150.8 9.6 38.4 112 38.4 248v16c0 135.2 112.4 238.4 247.2 238.4h16C420.4 502.4 532.8 399.2 532.8 264V248C532.8 112 420.4 9.6 285.6 9.6zm83.2 232a92 92 0 1 1-92-92 92 92 0 0 1 92 92zm22.4-92.8c0-41-35.2-76.8-76.8-76.8s-76.8 35.2-76.8 76.8v22.4c0 41 35.2 76.8 76.8 76.8s76.8-35.2 76.8-76.8v-22.4z">
-                                    </path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="text-center">
-                        <span>©️ 2023 MoxieLash, Inc. | MoxieLash and MoxieLash
-                            Lashies are trademarked. Multi-Patent Pending.</span>
-                        <div>
+                        <div class="text-center">
+                            <span>©️ 2023 MoxieLash, Inc. | MoxieLash and MoxieLash
+                                Lashies are trademarked. Multi-Patent Pending.</span>
                             <div>
-                                <a href="/pages/terms-conditions" class="atri_margin">Terms of Service</a>
-                                <a href="/pages/privacy-policy" class="atri_margin">Privacy Policy</a>
+                                <div>
+                                    <a href="/pages/terms-conditions" class="atri_margin">Terms of Service</a>
+                                    <a href="/pages/privacy-policy" class="atri_margin">Privacy Policy</a>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -82,8 +82,8 @@
             <div class="bg-[#FED8BF] text-center py-3 lg:py-2">
                 <div class="">Free Shipping when you spend $75+</div>
             </div>
-            <div class="navbar hidden lg:block px-4 py-3 flex flex-row  justify-between items-center">
-                <div class="">
+            <nav class="hidden lg:block">
+                <div class=" px-4 py-3 flex flex-row justify-between items-center">
                     <ul class="flex flex-row justify-between gap-7 font-[14px] font-[futura-pt-bold]">
                         <li class="cursor-pointer hover:underline">
                             SHOP
@@ -98,26 +98,26 @@
                             REWARDS
                         </li>
                     </ul>
-                </div>
-                <div class="pl-[120px]">
-                    <img class=" max-w-[235px] h-[400]"
-                        src="https://cdn.shopify.com/s/files/1/2569/3918/files/logo-black.png?v=1680684639" />
-                </div>
+                    <div class="pl-[120px]">
+                        <img class=" max-w-[235px] h-[400]"
+                            src="https://cdn.shopify.com/s/files/1/2569/3918/files/logo-black.png?v=1680684639" />
+                    </div>
 
-                <div class="flex flex-row justify-evenly gap-6 items-center float-right">
-                    <div><input type="search" autocomplete="off" results="0" autofill="none" name="q"
-                            id="default-search"
-                            class="block border moxie-search-input p-2 pl-10 text-gray-900 text-sm lg:h-[34px] xl:w-[300px] lg:w-[300px] w-full"
-                            placeholder="Looking For...">
-                    </div>
-                    <div> <img class="w-[23px]"
-                            src="https://cdn.shopify.com/s/files/1/2569/3918/files/account-icon-black.png?v=1680685034" />
-                    </div>
-                    <div><img class="w-[23px]"
-                            src="https://cdn.shopify.com/s/files/1/2569/3918/files/cart-icon-black.png?v=1680685034" />
+                    <div class="flex flex-row justify-evenly gap-6 items-center float-right">
+                        <div><input type="search" autocomplete="off" results="0" autofill="none" name="q"
+                                id="default-search"
+                                class="block border moxie-search-input p-2 pl-10 text-gray-900 text-sm lg:h-[34px] xl:w-[300px] lg:w-[300px] w-full"
+                                placeholder="Looking For...">
+                        </div>
+                        <div> <img class="w-[23px]"
+                                src="https://cdn.shopify.com/s/files/1/2569/3918/files/account-icon-black.png?v=1680685034" />
+                        </div>
+                        <div><img class="w-[23px]"
+                                src="https://cdn.shopify.com/s/files/1/2569/3918/files/cart-icon-black.png?v=1680685034" />
+                        </div>
                     </div>
                 </div>
-            </div>
+            </nav>
             <div class="flex lg:hidden justify-around items-center gap-5 px-2 py-6">
                 <div class="">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -167,7 +167,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="portrait:hidden w-[65%]">
+                <div class="hidden lg:block w-[65%]">
                     <img class=" object-cover min-h-[50vh]"
                         src="https://cdn.shopify.com/s/files/1/2569/3918/t/15/assets/1687340104760-Rectangle-1163-(1).png?v=1687340105">
                 </div>
@@ -249,7 +249,7 @@
                             href="#">OUR BESTSELLERS</a>
                     </div>
                     <div
-                        class=" w-full mb-[40px] md:mb-[0px] mt-[25px] md:mt-[0px] md:pb-[40px] px-[10px] md:px-[20px] max-w-[1700px] !grid grid-cols-2 md:grid-cols-4 mx-auto">
+                        class=" w-full mb-[40px] md:mb-[0px] mt-[25px] md:mt-[0px] md:pb-[40px] px-[10px] md:px-[20px] max-w-[1700px] !grid grid-cols-2 md:grid-cols-4 items-stretch mx-auto ">
                         <div
                             class="single-product-card nanogrip-eyelashes-starter-bundle   md:!px-[15px] !px-[15px] testedHere relative">
                             <div
@@ -274,35 +274,37 @@
                                         NANO-GRIP</p>
                                 </div>
                             </div>
-                            <div>
+                            <div class="lg:flex lg:items-start">
                                 <h3
                                     class="uppercase font-[futura-pt-bold] pb-1 text-center text-[14px] product-title !my-0 !mx-0 !tracking-[1px] md:!text-left">
                                     Lashies™ Starter bundle</span>
                                 </h3>
+                                <div class="flex items-center justify-center lg:min-w-[90px]">
+                                    <ul class="list-inline flex flex-row items-center ">
+                                        <li class="list-inline-item ">
+                                            <i class="fas fa-star text-black fa-xs"></i>
+                                        </li>
+                                        <li class="list-inline-item ">
+                                            <i class="fas fa-star text-black fa-xs"></i>
+                                        </li>
+                                        <li class="list-inline-item ">
+                                            <i class="fas fa-star text-black fa-xs"></i>
+                                        </li>
+                                        <li class="list-inline-item ">
+                                            <i class="fas fa-star text-black fa-xs"></i>
+                                        </li>
+                                        <li class="list-inline-item ">
+                                            <i class="fas fa-star text-black fa-xs"></i>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <i class="fas fa-startext-black fa-xs"></i>
+                                        </li>
+                                    </ul>
+                                    <p
+                                        class="!text-black pl-[4px] text-[10px] leading-[20px] md:text-[12px] font-[400] md:leading-[16px] tracking-[0.6px] font-futura_pt uppercase">
+                                        (77)</p>
+                                </div>
                             </div>
-                            <div class="flex items-center justify-center ">
-                                <ul class="list-inline flex flex-row items-center ">
-                                    <li class="list-inline-item ">
-                                        <i class="fas fa-star text-black fa-xs"></i>
-                                    </li>
-                                    <li class="list-inline-item ">
-                                        <i class="fas fa-star text-black fa-xs"></i>
-                                    </li>
-                                    <li class="list-inline-item ">
-                                        <i class="fas fa-star text-black fa-xs"></i>
-                                    </li>
-                                    <li class="list-inline-item ">
-                                        <i class="fas fa-star text-black fa-xs"></i>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <i class="fas fa-startext-black fa-xs"></i>
-                                    </li>
-                                </ul>
-                                <p
-                                    class="!text-black pl-[4px] text-[10px] leading-[20px] md:text-[12px] font-[400] md:leading-[16px] tracking-[0.6px] font-futura_pt uppercase">
-                                    (77)</p>
-                            </div>
-                            </a>
                             <div class="flex justify-center p-card-desc md:!justify-start pt-3 pb-2">
                                 <p class="tracking-[0.08em] text-black !font-[futura-pt,sans-serif] text-[14px] font-[400] uppercase leading-[14px]
                         ">Natural Mix</p>
@@ -321,7 +323,7 @@
                                     </p>
 
                                     <div
-                                        class="flex flex-row gap-2 justify-center product-price-wrapper !tracking-[0px] md:!tracking-[1px] !pt-[0] !pb-[0px] portrait:!hidden">
+                                        class="flex flex-row gap-2 justify-center product-price-wrapper !tracking-[0px] md:!tracking-[1px] !pt-[0] !pb-[0px] portrait:!hidden hidden lg:block">
                                         <span class="regular-price font-[futura-pt-bold] text-[16px]">$74</span>
                                         <s class="crossed-out-price font-[futura-pt] font-bold text-[14px]">$119</s>
 
@@ -353,35 +355,37 @@
                                         NANO-GRIP</p>
                                 </div>
                             </div>
-                            <div>
+                            <div class="lg:flex lg:items-start lg:justify-between">
                                 <h3
                                     class="uppercase text-center font-[futura-pt-bold] text-[14px] text-[14px] product-title !my-0 !mx-0 !tracking-[1px] md:!text-left">
                                     THE BEST-SELLERS BUNDLE</span>
                                 </h3>
+                                <div class="flex items-center justify-center lg:min-w-[90px]">
+                                    <ul class="list-inline flex flex-row items-center ">
+                                        <li class="list-inline-item ">
+                                            <i class="fas fa-star text-black fa-xs"></i>
+                                        </li>
+                                        <li class="list-inline-item ">
+                                            <i class="fas fa-star text-black fa-xs"></i>
+                                        </li>
+                                        <li class="list-inline-item ">
+                                            <i class="fas fa-star text-black fa-xs"></i>
+                                        </li>
+                                        <li class="list-inline-item ">
+                                            <i class="fas fa-star text-black fa-xs"></i>
+                                        </li>
+                                        <li class="list-inline-item ">
+                                            <i class="fas fa-star text-black fa-xs"></i>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <i class="fas fa-startext-black fa-xs"></i>
+                                        </li>
+                                    </ul>
+                                    <p
+                                        class="!text-black pl-[4px] text-[10px] leading-[20px] md:text-[12px] font-[400] md:leading-[16px] tracking-[0.6px] font-futura_pt uppercase">
+                                        (129)</p>
+                                </div>
                             </div>
-                            <div class="flex items-center justify-center ">
-                                <ul class="list-inline flex flex-row items-center ">
-                                    <li class="list-inline-item ">
-                                        <i class="fas fa-star text-black fa-xs"></i>
-                                    </li>
-                                    <li class="list-inline-item ">
-                                        <i class="fas fa-star text-black fa-xs"></i>
-                                    </li>
-                                    <li class="list-inline-item ">
-                                        <i class="fas fa-star text-black fa-xs"></i>
-                                    </li>
-                                    <li class="list-inline-item ">
-                                        <i class="fas fa-star text-black fa-xs"></i>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <i class="fas fa-startext-black fa-xs"></i>
-                                    </li>
-                                </ul>
-                                <p
-                                    class="!text-black pl-[4px] text-[10px] leading-[20px] md:text-[12px] font-[400] md:leading-[16px] tracking-[0.6px] font-futura_pt uppercase">
-                                    (77)</p>
-                            </div>
-                            </a>
                             <div class="flex justify-center p-card-desc md:!justify-start pt-3 pb-2">
                                 <p class="tracking-[0.08em] text-black !font-[futura-pt,sans-serif] text-[14px] font-[400] uppercase leading-[14px]
                         ">Natural Mix</p>
@@ -399,7 +403,7 @@
                                     <p class="inline-block font-[futura] font-bold text-[14px]">ADD TO CART
                                     </p>
                                     <div
-                                        class="flex flex-row gap-2 justify-center product-price-wrapper !tracking-[0px] md:!tracking-[1px] !pt-[0] !pb-[0px] portrait:!hidden">
+                                        class="flex flex-row gap-2 justify-center product-price-wrapper !tracking-[0px] md:!tracking-[1px] !pt-[0] !pb-[0px] portrait:!hidden hidden lg:block">
                                         <span class="regular-price font-[futura-pt-bold] text-[16px]">$74</span>
                                         <s class="crossed-out-price font-[futura-pt] font-bold text-[14px]">$119</s>
 
@@ -422,10 +426,10 @@
                                 <img class="object-cover w-full  max-w-[280px] max-h-[230px] md:max-w-[320px] md:max-h-[248px]"
                                     src="//www.moxielash.com/cdn/shop/products/love-kit-kit-sk2-rt-1-388170_large.jpg?v=1686936836">
 
-                        
-                                    <img class="absolute w-[40%] right-[8px] bottom-[5px] lg:right-[8px] lg:-bottom-[9px] lg:w-[29%]"
-                                        src="https://cdn.shopify.com/s/files/1/2569/3918/files/NB_AwardSeal2022_200x.png?v=1650191524">
-                        
+
+                                <img class="absolute w-[40%] right-[8px] bottom-[5px] lg:right-[8px] lg:-bottom-[9px] lg:w-[29%]"
+                                    src="https://cdn.shopify.com/s/files/1/2569/3918/files/NB_AwardSeal2022_200x.png?v=1650191524">
+
                             </a>
 
 
@@ -439,35 +443,38 @@
                                         NANO-GRIP</p>
                                 </div>
                             </div>
-                            <div>
+                            <div class="lg:flex lg:items-start lg:justify-between">
                                 <h3
                                     class="uppercase text-center font-[futura-pt-bold] text-[14px] text-[14px] product-title !my-0 !mx-0 !tracking-[1px] md:!text-left">
                                     Love Kit</span>
                                 </h3>
+
+                                <div class="flex items-center justify-center lg:min-w-[90px]">
+                                    <ul class="list-inline flex flex-row items-center ">
+                                        <li class="list-inline-item ">
+                                            <i class="fas fa-star text-black fa-xs"></i>
+                                        </li>
+                                        <li class="list-inline-item ">
+                                            <i class="fas fa-star text-black fa-xs"></i>
+                                        </li>
+                                        <li class="list-inline-item ">
+                                            <i class="fas fa-star text-black fa-xs"></i>
+                                        </li>
+                                        <li class="list-inline-item ">
+                                            <i class="fas fa-star text-black fa-xs"></i>
+                                        </li>
+                                        <li class="list-inline-item ">
+                                            <i class="fas fa-star text-black fa-xs"></i>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <i class="fas fa-startext-black fa-xs"></i>
+                                        </li>
+                                    </ul>
+                                    <p
+                                        class="!text-black pl-[4px] text-[10px] leading-[20px] md:text-[12px] font-[400] md:leading-[16px] tracking-[0.6px] font-futura_pt uppercase">
+                                        (1261)</p>
+                                </div>
                             </div>
-                            <div class="flex items-center justify-center ">
-                                <ul class="list-inline flex flex-row items-center ">
-                                    <li class="list-inline-item ">
-                                        <i class="fas fa-star text-black fa-xs"></i>
-                                    </li>
-                                    <li class="list-inline-item ">
-                                        <i class="fas fa-star text-black fa-xs"></i>
-                                    </li>
-                                    <li class="list-inline-item ">
-                                        <i class="fas fa-star text-black fa-xs"></i>
-                                    </li>
-                                    <li class="list-inline-item ">
-                                        <i class="fas fa-star text-black fa-xs"></i>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <i class="fas fa-startext-black fa-xs"></i>
-                                    </li>
-                                </ul>
-                                <p
-                                    class="!text-black pl-[4px] text-[10px] leading-[20px] md:text-[12px] font-[400] md:leading-[16px] tracking-[0.6px] font-futura_pt uppercase">
-                                    (77)</p>
-                            </div>
-                            </a>
                             <div class="flex justify-center p-card-desc md:!justify-start pt-3 pb-2">
                                 <p class="tracking-[0.08em] text-black !font-[futura-pt,sans-serif] text-[14px] font-[400] uppercase leading-[14px]
                         ">Natural Mix</p>
@@ -485,7 +492,7 @@
                                     <p class="inline-block font-[futura] font-bold text-[14px]">ADD TO CART
                                     </p>
                                     <div
-                                        class="flex flex-row gap-2 justify-center product-price-wrapper !tracking-[0px] md:!tracking-[1px] !pt-[0] !pb-[0px] portrait:!hidden">
+                                        class="flex flex-row gap-2 justify-center product-price-wrapper !tracking-[0px] md:!tracking-[1px] !pt-[0] !pb-[0px] portrait:!hidden hidden lg:block">
                                         <span class="regular-price font-[futura-pt-bold] text-[16px]">$74</span>
                                         <s class="crossed-out-price font-[futura-pt] font-bold text-[14px]">$119</s>
 
@@ -517,35 +524,34 @@
                                         NANO-GRIP</p>
                                 </div>
                             </div>
-                            <div>
+                            <div class="lg:flex lg:items-start lg:justify-between">
                                 <h3
                                     class="uppercase font-[futura-pt-bold] text-center text-[14px] text-[14px] product-title !my-0 !mx-0 !tracking-[1px] md:!text-left">
                                     DAY 2 Night</span>
                                 </h3>
+                                <div class="flex items-center justify-center lg:min-w-[90px]">
+                                    <ul class="list-inline flex flex-row items-center ">
+                                        <li class="list-inline-item ">
+                                            <i class="fas fa-star text-black fa-xs"></i>
+                                        </li>
+                                        <li class="list-inline-item ">
+                                            <i class="fas fa-star text-black fa-xs"></i>
+                                        </li>
+                                        <li class="list-inline-item ">
+                                            <i class="fas fa-star text-black fa-xs"></i>
+                                        </li>
+                                        <li class="list-inline-item ">
+                                            <i class="fas fa-star text-black fa-xs"></i>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <i class="fas fa-startext-black fa-xs"></i>
+                                        </li>
+                                    </ul>
+                                    <p
+                                        class="!text-black pl-[4px] text-[10px] leading-[20px] md:text-[12px] font-[400] md:leading-[16px] tracking-[0.6px] font-futura_pt uppercase">
+                                        (2)</p>
+                                </div>
                             </div>
-                            <div class="flex items-center justify-center ">
-                                <ul class="list-inline flex flex-row items-center ">
-                                    <li class="list-inline-item ">
-                                        <i class="fas fa-star text-black fa-xs"></i>
-                                    </li>
-                                    <li class="list-inline-item ">
-                                        <i class="fas fa-star text-black fa-xs"></i>
-                                    </li>
-                                    <li class="list-inline-item ">
-                                        <i class="fas fa-star text-black fa-xs"></i>
-                                    </li>
-                                    <li class="list-inline-item ">
-                                        <i class="fas fa-star text-black fa-xs"></i>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <i class="fas fa-startext-black fa-xs"></i>
-                                    </li>
-                                </ul>
-                                <p
-                                    class="!text-black pl-[4px] text-[10px] leading-[20px] md:text-[12px] font-[400] md:leading-[16px] tracking-[0.6px] font-futura_pt uppercase">
-                                    (77)</p>
-                            </div>
-                            </a>
                             <div class="flex justify-center p-card-desc md:!justify-start pt-3 pb-2">
                                 <p class="tracking-[0.08em] text-black !font-[futura-pt,sans-serif] text-[14px] font-[400] uppercase leading-[14px]
                         ">Natural Mix</p>
@@ -563,7 +569,7 @@
                                     <p class="inline-block font-[futura] font-bold text-[14px]">ADD TO CART
                                     </p>
                                     <div
-                                        class="flex flex-row gap-2 justify-center product-price-wrapper !tracking-[0px] md:!tracking-[1px] !pt-[0] !pb-[0px] portrait:!hidden">
+                                        class="flex flex-row gap-2 justify-center product-price-wrapper !tracking-[0px] md:!tracking-[1px] !pt-[0] !pb-[0px] portrait:!hidden hidden lg:block">
                                         <span class="regular-price font-[futura-pt-bold] text-[16px]">$74</span>
                                         <s class="crossed-out-price font-[futura-pt] font-bold text-[14px]">$119</s>
                                     </div>
@@ -578,7 +584,6 @@
                         </a>
                     </div>
                 </section>
-                <section>
 
             </div>
             <!-- output ->6home-banner-feb-2023-->
@@ -828,6 +833,7 @@
                     </div>
                 </footer>
             </div>
+        </div>
     </main>
 </body>
 
